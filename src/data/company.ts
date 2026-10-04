@@ -1,0 +1,15 @@
+export const company = {
+  name: 'GRNR Constructions Ltd',
+  director: 'Gnanendra Reddy Ketham Reddy',
+  registrationNumber: '16935352',
+  registrationJurisdiction: 'England & Wales',
+  address: '47 Morden Court, London Road, Morden, SM4 5HN, UK',
+  email: 'grnrconstructions@gmail.com',
+  phone: '+44 7344 206690',
+  phoneDigits: '447344206690',
+  serviceArea: ['Morden', 'Merton', 'Sutton', 'Wimbledon', 'Croydon', 'Greater London'],
+  openingHours: 'Monday to Saturday, 8:00am to 6:00pm',
+  siteUrl: import.meta.env.VITE_SITE_URL ?? 'https://example.com',
+  whatsappUrl: 'https://wa.me/447344206690',
+  trustPoints: ['Company No. 16935352', 'Fully insured', 'Free quotes'],
+} as const

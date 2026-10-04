@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Morden detail</title>
+  <desc id="desc">Abstract detail artwork for a loft conversion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4efe6" />
+      <stop offset="100%" stop-color="#dde7ef" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <path d="M0 160L420 0h220L0 330z" fill="#8b5cf6" fill-opacity="0.14" />
+  <rect x="190" y="225" width="820" height="390" rx="42" fill="#ffffff" fill-opacity="0.6" />
+  <rect x="275" y="310" width="250" height="220" rx="22" fill="#8b5cf6" fill-opacity="0.22" />
+  <rect x="555" y="310" width="260" height="220" rx="22" fill="#cbd5e1" fill-opacity="0.8" />
+  <text x="80" y="820" fill="#0f1720" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="40">Detail</text>
+</svg>

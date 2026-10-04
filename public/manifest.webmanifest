@@ -1,0 +1,15 @@
+{
+  "name": "GRNR Constructions Ltd",
+  "short_name": "GRNR",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f3ed",
+  "theme_color": "#0f1720",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

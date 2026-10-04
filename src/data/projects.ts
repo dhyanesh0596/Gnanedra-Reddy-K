@@ -1,0 +1,12 @@
+export type Project = { id: string; name: string; category: string; location: string; scope: string; duration: string; summary: string; beforeImage: string; afterImage: string; gallery: string[] }
+
+export const projectCategories = ['All', 'Extensions', 'Renovations', 'Conversions', 'External']
+
+export const projects: Project[] = [
+  { id: 'wimbledon-extension', name: 'Wimbledon family extension', category: 'Extensions', location: '[REPLACE: London location]', scope: '[REPLACE: extension scope and finishes]', duration: '[REPLACE: project duration]', summary: 'A light-filled rear extension concept with a clean internal transition.', beforeImage: '/images/project-wimbledon-before.svg', afterImage: '/images/project-wimbledon-after.svg', gallery: ['/images/project-wimbledon-before.svg', '/images/project-wimbledon-after.svg', '/images/project-wimbledon-detail.svg'] },
+  { id: 'morden-loft', name: 'Morden loft conversion', category: 'Conversions', location: '[REPLACE: London location]', scope: '[REPLACE: loft scope and finishes]', duration: '[REPLACE: project duration]', summary: 'A practical upper-floor reconfiguration designed to maximise usable space.', beforeImage: '/images/project-morden-before.svg', afterImage: '/images/project-morden-after.svg', gallery: ['/images/project-morden-before.svg', '/images/project-morden-after.svg', '/images/project-morden-detail.svg'] },
+  { id: 'croydon-renovation', name: 'Croydon home renovation', category: 'Renovations', location: '[REPLACE: London location]', scope: '[REPLACE: renovation scope and finishes]', duration: '[REPLACE: project duration]', summary: 'A whole-home refresh built around brighter circulation and better storage.', beforeImage: '/images/project-croydon-before.svg', afterImage: '/images/project-croydon-after.svg', gallery: ['/images/project-croydon-before.svg', '/images/project-croydon-after.svg', '/images/project-croydon-detail.svg'] },
+  { id: 'sutton-landscaping', name: 'Sutton external works', category: 'External', location: '[REPLACE: London location]', scope: '[REPLACE: external works scope and finishes]', duration: '[REPLACE: project duration]', summary: 'Groundworks and landscaping to close out an extension-led project properly.', beforeImage: '/images/project-sutton-before.svg', afterImage: '/images/project-sutton-after.svg', gallery: ['/images/project-sutton-before.svg', '/images/project-sutton-after.svg', '/images/project-sutton-detail.svg'] },
+]
+
+export const featuredProjects = projects.slice(0, 3)

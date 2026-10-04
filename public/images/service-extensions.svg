@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">House extensions placeholder</title>
+  <desc id="desc">Abstract construction artwork with brick and glass forms.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f1e8" />
+      <stop offset="100%" stop-color="#dce7f0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <path d="M0 120L470 0h220L0 260z" fill="#ea580c" fill-opacity="0.17" />
+  <path d="M760 900L1200 640v260z" fill="#1d4ed8" fill-opacity="0.08" />
+  <rect x="170" y="250" width="860" height="340" rx="42" fill="#ffffff" fill-opacity="0.62" />
+  <rect x="250" y="320" width="320" height="180" rx="24" fill="#ea580c" fill-opacity="0.42" />
+  <rect x="615" y="320" width="170" height="180" rx="24" fill="#93c5fd" fill-opacity="0.65" />
+  <rect x="815" y="320" width="140" height="180" rx="24" fill="#0f1720" fill-opacity="0.12" />
+  <text x="80" y="830" fill="#0f1720" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="40">Extension concept artwork</text>
+</svg>

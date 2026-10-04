@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Service placeholder 2</title>
+  <desc id="desc">Neutral construction placeholder with warm off-white and dark overlays.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f2ea" />
+      <stop offset="100%" stop-color="#eef1f4" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)" />
+  <path d="M110 680L390 350l180 100 240-180 280 110-160 290z" fill="#0f1720" fill-opacity="0.12" />
+  <circle cx="930" cy="260" r="120" fill="#f59e0b" fill-opacity="0.16" />
+  <text x="80" y="830" fill="#0f1720" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="40">Service image placeholder</text>
+</svg>

@@ -1,0 +1,12 @@
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { useState } from 'react'
+import { createPortal } from 'react-dom'
+import { Button } from '@/components/Button'
+import { cn } from '@/lib/cn'
+
+export function Lightbox({ open, title, details, images, initialIndex = 0, onClose }: { open: boolean; title: string; details?: Array<{ label: string; value: string }>; images: string[]; initialIndex?: number; onClose: () => void }) {
+  const [activeIndex, setActiveIndex] = useState(initialIndex)
+  if (!open || typeof document === 'undefined') return null
+  const activeImage = images[activeIndex]
+  return createPortal(<div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 px-4 py-6 backdrop-blur-sm"><div className="max-h-[90vh] w-full max-w-6xl overflow-hidden rounded-3xl bg-white shadow-2xl"><div className="flex items-center justify-between border-b border-line px-5 py-4"><div><p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">Project gallery</p><h3 className="site-heading mt-1 text-xl font-semibold text-text">{title}</h3></div><button type="button" className="rounded-full p-2 hover:bg-surface-muted" onClick={onClose}><X className="size-5" /></button></div><div className="grid gap-0 lg:grid-cols-[1.4fr_0.6fr]"><div className="relative bg-black"><img src={activeImage} alt={title} className="h-[50vh] w-full object-cover lg:h-[72vh]" /><div className="absolute inset-x-4 bottom-4 flex items-center justify-between"><Button variant="secondary" onClick={() => setActiveIndex((value) => (value - 1 + images.length) % images.length)}><ChevronLeft className="mr-2 size-4" />Prev</Button><Button variant="secondary" onClick={() => setActiveIndex((value) => (value + 1) % images.length)}>Next<ChevronRight className="ml-2 size-4" /></Button></div></div><div className="space-y-6 overflow-y-auto p-6">{details ? <dl className="grid gap-4 rounded-2xl bg-surface-muted p-5 text-sm">{details.map((detail) => <div key={detail.label} className="space-y-1"><dt className="font-semibold text-text">{detail.label}</dt><dd className="text-text-muted">{detail.value}</dd></div>)}</dl> : null}<div className="grid grid-cols-3 gap-3">{images.map((image, index) => <button key={image} type="button" className={cn('overflow-hidden rounded-2xl border border-line', activeIndex === index && 'ring-2 ring-accent')} onClick={() => setActiveIndex(index)}><img src={image} alt={`${title} preview ${index + 1}`} className="aspect-[4/3] w-full object-cover" /></button>)}</div></div></div></div></div>, document.body)
+}
