@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Groundworks and landscaping placeholder</title>
+  <desc id="desc">Abstract exterior works artwork with paving and planting tones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3efe6" />
+      <stop offset="100%" stop-color="#dce8eb" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <path d="M0 150L390 0h220L0 320z" fill="#16a34a" fill-opacity="0.14" />
+  <path d="M820 900L1200 580v320z" fill="#14532d" fill-opacity="0.08" />
+  <rect x="170" y="235" width="860" height="385" rx="42" fill="#ffffff" fill-opacity="0.6" />
+  <rect x="255" y="325" width="230" height="190" rx="24" fill="#16a34a" fill-opacity="0.24" />
+  <rect x="515" y="325" width="260" height="190" rx="24" fill="#a7f3d0" fill-opacity="0.78" />
+  <rect x="805" y="325" width="140" height="190" rx="24" fill="#6b7280" fill-opacity="0.18" />
+  <text x="80" y="830" fill="#0f1720" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="40">Exterior works artwork</text>
+</svg>

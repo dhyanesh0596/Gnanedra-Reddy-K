@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Morden before</title>
+  <desc id="desc">Abstract loft conversion before artwork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2ede4" />
+      <stop offset="100%" stop-color="#dbe6ef" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <path d="M0 150L360 0h240L0 300z" fill="#64748b" fill-opacity="0.16" />
+  <rect x="220" y="240" width="760" height="370" rx="40" fill="#ffffff" fill-opacity="0.58" />
+  <path d="M300 500L520 330l220 170v80H300z" fill="#64748b" fill-opacity="0.28" />
+  <rect x="585" y="395" width="250" height="165" rx="22" fill="#f59e0b" fill-opacity="0.22" />
+  <text x="80" y="820" fill="#0f1720" fill-opacity="0.68" font-family="Inter, Arial, sans-serif" font-size="40">Before</text>
+</svg>
